@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+
+    {% if age > 10 %}
+        <h1> student age is</h1>
+    {% endif %}
+
+
+
+
+        {% if a > b %}
+            <h1> a is max</h1>
+            <h1> a value is{{a}}</h1>
+        {% else %}
+            <h1> b is max</h1>
+            <h1> b value is {{b}}</h1>
+        {% endif %}
+
+
+
+
+
+
+    {% if a > b and a > c  %}
+        <h1> a is max</h1>
+        <h1> a value is {{a}}</h1>
+    {% elif b > c %}
+        <h1> b is max</h1>
+        <h1> b value is {{b}}</h1>
+    {% else %}
+        <h1> c is max</h1>
+        <h1> c value is {{c}}</h1>
+    {% endif %}
+
+
+
+
+    {% if a > b %}
+        {% if a > c%}
+            <h1> a is max</h1>
+            <h1> a value is {{a}}</h1>
+        {% else %}
+            <h1> b is max</h1>
+            <h1> b value is {{b}}</h1>
+        {% endif  %}
+    {% else %}
+        {% if b > c %}
+            <h1> b is max</h1>
+            <h1> b value is {{b}}</h1>
+        {% else %}
+            <h1> c is max </h1>
+            <h1> c value is {{c}}</h1>
+        {% endif %}
+    {% endif %}
+    </center>
+</body>
+</html>
