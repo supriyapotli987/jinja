@@ -19,6 +19,16 @@
             student age is {{age}}
         </h1>
 {% endif %}
+
+{% for i in name %}
+        <h1>{{i}}</h1>
+    {% endfor %}
+
+{% for j in hobbies %}
+<h1>{{j}}</h1>
+{% endfor %}
+
+<h1> <a href="{% url 'ifconditions' %}">click to here we have to goto ifconditions</a></h1>
     </center>
 </body>
 </html>
